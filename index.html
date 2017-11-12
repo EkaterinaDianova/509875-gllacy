@@ -7,52 +7,82 @@
   </head>
 
   <body>
+   <!--header-->
     <header class="main-header">
       <nav class="main-navigation">
-         <a class="main-header-logo">
+         <a class="main-header-logo" href="#">
     	    <img src="img/logo.svg" width="154" height="64" alt="Логотип">
     	  </a>
-    	  <ul class="site-navigation">
-    	  	<li><a href="catalog.html">Каталог</a></li>
-    	  	<li><a href="#">Доставка и оплата</a></li>
-    	  	<li><a href="#">О Компании</a></li>
-    	  </ul>
-
-    	  <div class="header-info">
-    	    <ul class="user-navigation">
-            <li class="search"><img src="img/search.png" width="17" height="17" alt="поиск"></li>
-    	  	  <li class="login-link"><a href="#"><img src="img/enter.png" width="21" height="19" alt="вход">Вход</a></li>
-            <li><a class="button btn-card" href="#"><img src="img/card.png" width="21" height="20" alt="корзина">Пусто</a></li>
-    	    </ul> 	    	      	  	
+    	  <div class="site-navigation">
+    	  	<div class="site-navigation-catalog"><a href="catalog.html">Каталог</a></div>
+            <form class="form-menu-catalog">
+              <select>
+                <option>Новинки</option>
+                <option>Сливочное</option>
+                <option>Щербеты</option>
+                <option>Фруктовый лед</option>
+                <option>Мелорин</option>
+              </select>
+            </form>
+    	  	<div class="site-navigation-delivery"><a href="#">Доставка и оплата</a></div>
+    	  	<div class="site-navigation-about"><a href="#">О Компании</a></div>
     	  </div>
 
+    	  <div class="header-info">
+    	    <div class="user-navigation">
+            <div class="search"><button class="button button-search">Поиск</button> 
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <input type="search" name="search" id="search" placeholder="Что ищем?">
+                  <label for="search" class="visually-hidden">Что ищем?</label> 
+                </p>
+              </form>
+            </div>             
+    	  	  <div class="login-link"><button class="button button-login">Вход</button></div>
+              <form class="autorization">
+                <p>                  
+                  <input type="email" name="login" placeholder="Электронная почта" id="login">
+                  <label for="login" class="visually-hidden">Электронная почта</label>
+                </p>
+                <p>
+                  <input type="password" name="password" placeholder="Пароль" id="password-header">
+                  <label for="password-header" class="visually-hidden" id="password">Пароль</label>
+                </p>                
+                <button class="button" type="submit" name="autorization-submit">Войти</button>
+                <div class="form-autorization-link">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>                
+              </form>
+            <div><button class="button btn-card">Пусто</button></div>
+    	    </div> 	    	      	  	
+    	  </div>
     	  <p class="header-contacts">С 10 до 20, ежедневно <br>
-    	    <a href="tel: +88124502525" class="header-contacts-number">8 812 450-25-25</a>    	  	
-    	  </p>      	
+    	    <a href="tel:+88124502525" class="header-contacts-number">8 812 450-25-25</a>    	  	
+    	  </p>
       </nav>    	
     </header>
+    <!--end header-->
 
     <main class="container">
 
       <section class="slider">
         <h2>Крем-брюле и пломбир с малиновым джемом</h2>
         <img src="img/icecreamslider.png" width="647" height="584" alt="Мороженое1">
-        <a class="button btn-slider" href="#">Давайте оба!</a>    	
+        <button class="button btn-slider">Давайте оба!</button>    	
       </section>
 
       <section class="banner">
         <div class="banner-item raspberries-banner">
-          <img src="img/raspberries-bg.jpg" width="787" height="410" alt="баннер">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="button btn-banner-jam" href="#">Хочу варенье!</a>
+          <button class="button btn-banner-jam">Хочу варенье!</button>
         </div>
 
         <div class="banner-item chocolate-banner">
-          <img src="img/chocolate-bg.jpg" width="830" height="450" alt="баннер">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="button btn-banner-choc" href="#">Хочу шоколадки!</a>
+          <button class="button btn-banner-choc">Хочу шоколадки!</button>
         </div>      	
       </section>  
 
@@ -90,19 +120,15 @@
        <h2 class="visually-hidden">О компании</h2>
         <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
         <div class="about-block about-block-1">
-          <img src="img/icecream-about.png" width="49" height="49" alt="Cливочное мороженое">
           <p class="about-company-feature">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         </div>
         <div class="about-block about-block-2">
-          <img src="img/leaf-about.png" width="49" height="49" alt="лист">
           <p class="about-company-feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </div>
         <div class="about-block about-block-3">
-          <img src="img/cow-about.png" width="49" height="49" alt="корова">
           <p class="about-company-feature">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         </div>
         <div class="about-block about-block-4">
-          <img src="img/thermometr-about.png" width="49" height="49" alt="термопак">
           <p class="about-company-feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </div>        	
       </section>
@@ -114,7 +140,11 @@
 
       <section class="dispatch">
       	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      	<!--Здесь будет форма-->
+        <form class="dispatch-submit" action="https://echo.htmlacademy.ru" method="post">
+        <input type="email" name="email" value="" placeholder="Электронная почта" required>
+        <button class="button button-submit">Отправить</button>
+        </form>
+      	
       </section>
 
       <section class="map">
@@ -132,23 +162,23 @@
       	<span class="contacts-number">8 812 450-25-25</span><br>
         (с 10 до 20 ежедневно)
       	</p>
-      	<a class="button btn-form-contacts" href="#">Форма обратной связи</a>
+      	<button class="button btn-form-contacts">Форма обратной связи</button>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"><img src="img/twitter.png" width="32" height="32" alt="Твиттер">Твиттер</a></li>
-          <li><a class="social-button" href="#"><img src="img/instagramm.png" width="32" height="32" alt="Инстаграмм">Инстаграмм</a></li>
-          <li><a class="social-button" href="#"><img src="img/facebook.png" width="32" height="32" alt="Фейсбук">Фейсбук</a></li>
-          <li><a class="social-button" href="#"><img src="img/vk.png" width="32" height="32" alt="Вконтакте">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Инстаграмм</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
         </ul>       
       </div>
 
       <div class="footer-menu">
         <ul>
-        	<li><a href="#"><img src="img/heart.png" width="15" height="13" alt="сердце">Для поставщиков</a></li>
+        	<li><a href="#">Для поставщиков</a></li>
         	<li><a href="#">О производстве</a></li>
         	<li><a href="#">Наши документы</a></li>
         	<li><a href="#">Экологические стандарты</a></li>
@@ -161,10 +191,24 @@
         </div>    	
     </footer>
 
-    <section class="modal modal-feedback">
-      <h2 class="visually-hidden">Мы обязательно вам ответим!</h2>
-      <span class="modal-close">x</span> 
-      <!--Здесь будет форма-->          
+    <section class="modal modal-feedback">           
+      <form class="form-feedback">
+        <h2>Мы обязательно вам ответим!</h2>
+        <button class="button modal-close">x</button>
+        <p>
+          <input type="text" name="name-modal" value="" placeholder="Как вас зовут?" id="name-modal">
+          <label for="name-modal" class="visually-hidden">Как вас зовут?</label>
+        </p>
+        <p>
+           <input type="email" name="email" value="" placeholder="Ваша почта для ответа?" id="email-modal">
+           <label for="email-modal" class="visually-hidden">Ваша почта для ответа?</label>
+        </p>
+        <p>          
+          <textarea name="note" rows="9" placeholder="Напишите что-нибудь..." id="text-modal"></textarea> 
+          <label for="text-modal" class="visually-hidden">Напишите что-нибудь...</label>
+        </p>               
+        <button class="button button-submit">Отправить</button>       
+      </form>         
     </section>
 
   
