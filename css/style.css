@@ -1,3 +1,43 @@
 body {
 	background-color: #849d8f;
 }
+
+/*Filters*/
+
+.filters-range-button {
+  width: 176px;
+  background: #f8f7f4;
+  height: 5px;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.skroll_left,
+.skroll_right {
+  position: absolute;
+  display: block;
+  width: 20px;
+  background: #fff;
+  height: 20px;
+  border-radius: 50%;
+  top: -8px;
+  z-index: 1;
+  border: none;
+}
+
+.skroll_left {
+  left: 50px;
+}
+
+.skroll_right {
+  right: 50px;
+}
+
+.skroll_field {
+  width: 293px;
+  height: 5px;
+  background: #f8f7f4;
+  position: absolute;
+  left: 54px;
+}
