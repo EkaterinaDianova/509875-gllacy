@@ -19,12 +19,6 @@ a:active {
   color: #ffbc9e;
 }
 
-button {
-  font: inherit;
-  text-align: center;
-  border: none;
-  vertical-align: middle;
- }
 
  /*Button*/
 
@@ -49,6 +43,13 @@ button {
   background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
 }
 
 
@@ -167,11 +168,11 @@ button {
 }
 
 .raspberries-banner {
-  background-image: url("../img/raspberries-bg.jpg");
+  background: #9a2a48 url("../img/raspberries-bg.jpg");
 }
 
 .chocolate-banner {
-  background-image: url("../img/chocolate-bg.jpg");
+  background: #482513 url("../img/chocolate-bg.jpg");
 }
 
 /*popular-item*/
@@ -205,7 +206,7 @@ button {
 
 .about-company {
   color: #323232;
-  background-image: url(../img/icecream-bg.jpg);
+  background: #ede2c7 url(../img/icecream-bg.jpg);
 }
 
 .about-company b {
@@ -222,7 +223,7 @@ button {
 
 .blog-new {
   color: #323232;
-  background-image: url(../img/news-bg.jpg);
+  background: #ffffff url(../img/news-bg.jpg);
 }
 
 .blog-new-category {
