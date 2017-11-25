@@ -11,15 +11,16 @@
 
   <body>
    <!--header-->
-    <header class="main-header">
+    <header class="main-header">     
       <nav class="main-navigation">
+        <div class="container-header">
          <a class="main-header-logo" href="#">
     	    <img src="img/logo.svg" width="154" height="64" alt="Логотип">
     	  </a>
     	  <div class="site-navigation">
     	  	<ul class="site-navigation-catalog">
             <li><a href="catalog.html">Каталог</a>
-              <ul class="form-menu-catalog">
+              <ul class="form-menu-catalog" hidden>
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочноe</a></li>
                 <li><a href="#">Щербеты</a/li>
@@ -34,7 +35,7 @@
     	  <div class="header-info">
     	    <div class="user-navigation">
             <div class="search"><button class="btn  button-user button-search">Поиск</button> 
-              <form action="https://echo.htmlacademy.ru" method="post">
+              <form action="https://echo.htmlacademy.ru" method="post" hidden>
                 <p class="user-item">
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
                   <label for="search" class="visually-hidden">Что ищем?</label> 
@@ -42,28 +43,31 @@
               </form>
             </div>             
     	  	  <div class="login-link"><button class="btn button-user button-login">Вход</button></div>
-              <form class="autorization">
-                <p class="user-item">                  
-                  <input type="email" name="login" placeholder="Электронная почта" id="login">
-                  <label for="login" class="visually-hidden">Электронная почта</label>
-                </p>
-                <p class="user-item">
-                  <input type="password" name="password" placeholder="Пароль" id="password-header">
-                  <label for="password-header" class="visually-hidden" id="password">Пароль</label>
-                </p>                
-                <button class="btn main-button" type="submit" name="autorization-submit">Войти</button>
-                <div class="form-autorization-link">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </div>                
-              </form>
+              <div class="autorization-wrapper">
+                   <form class="autorization" hidden>
+                    <p class="user-item">                  
+                      <input type="email" name="login" placeholder="Электронная почта" id="login">
+                      <label for="login" class="visually-hidden">Электронная почта</label>
+                      </p>
+                    <p class="user-item">
+                      <input type="password" name="password" placeholder="Пароль" id="password-header">
+                      <label for="password-header" class="visually-hidden" id="password">Пароль</label>
+                    </p>                
+                    <button class="btn main-button" type="submit" name="autorization-submit">Войти</button>
+                    <div class="form-autorization-link">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>                
+                </form>
+              </div>             
             <div><button class="btn button-user btn-card">Пусто</button></div>
     	    </div> 	    	      	  	
     	  </div>
     	  <p class="header-contacts">С 10 до 20, ежедневно <br>
     	    <a href="tel:+88124502525" class="header-contacts-number">8 812 450-25-25</a>    	  	
     	  </p>
-      </nav>    	
+        </div>
+      </nav>   	
     </header>
     <!--end header-->
 
@@ -149,19 +153,20 @@
         </div>        	
       </section>
 
-      <article class="blog-new">
-        <p class="blog-new-category">Новое в нашем блоге</p>
-        <h1>10 способов сервировки фруктовых щербетов к столу</h1>     	
-      </article>
+      <div class="index-columns">      
+        <article class="blog-new">
+          <p class="blog-new-category">Новое в нашем блоге</p>
+          <h1>10 способов сервировки фруктовых щербетов к столу</h1>      
+        </article>
 
-      <section class="dispatch">
-      	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="dispatch-submit" action="https://echo.htmlacademy.ru" method="post">
-        <input type="email" name="email" value="" placeholder="Электронная почта" required>
-        <button class="btn main-button button-submit">Отправить</button>
-        </form>
-      	
-      </section>
+        <section class="dispatch">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="dispatch-submit" action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" name="email" value="" placeholder="Электронная почта" required>
+          <button class="btn main-button button-submit">Отправить</button>
+          </form>       
+        </section>
+      </div>
 
       <section class="map">
        <h2 class="visually-hidden">Как до нас добраться?</h2>
@@ -170,41 +175,49 @@
       </section>
 
       <section class="contacts">
-      	<p>Адрес главного офиса<br>
-      	и офлайн-магазина:<br>
-      	<span class="contacts-main">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-      	</p>
-      	<p>Для заказов по телефону:<br>
-      	<span class="contacts-main">8 812 450-25-25</span><br>
-        (с 10 до 20 ежедневно)
-      	</p>
+        <div class="contacts-first">
+          <p>Адрес главного офиса<br>
+           и офлайн-магазина:<br>
+          <span class="contacts-main">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          </p>
+        </div>
+      	
+        <div class="contacts-second">
+          <p>Для заказов по телефону:<br>
+          <span class="contacts-main">8 812 450-25-25</span><br>
+          (с 10 до 20 ежедневно)
+          </p>
+        </div>
+      	
       	<button class="btn main-button btn-form-contacts">Форма обратной связи</button>
       </section>
     </main>
 
     <footer class="main-footer">
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграмм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-        </ul>       
-      </div>
+      <div class="container-footer">
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Инстаграмм</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+          </ul>       
+        </div>
 
-      <div class="footer-menu">
-        <ul>
-        	<li><a href="#">Для поставщиков</a></li>
-        	<li><a href="#">О производстве</a></li>
-        	<li><a href="#">Наши документы</a></li>
-        	<li><a href="#">Экологические стандарты</a></li>
-        </ul>      	
-      </div>
+        <div class="footer-menu">
+          <ul>
+        	  <li><a href="#">Для поставщиков</a></li>
+        	  <li><a href="#">О производстве</a></li>
+        	  <li><a href="#">Наши документы</a></li>
+        	  <li><a href="#">Экологические стандарты</a></li>
+          </ul>      	
+        </div>
 
-        <div class="footer-copyright">
-          <a href="#"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>
-          <p class="footer-copyright">Сделано в <a href="#">HTML Academy</a> © 2017</p>       	
-        </div>    	
+          <div class="footer-copyright">
+            <a href="#"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>
+            <p class="footer-copyright-text">Сделано в <a href="#">HTML Academy</a> © 2017</p>       	
+          </div>   
+      </div> 	
     </footer>
 
     <section class="modal modal-feedback">           
@@ -223,7 +236,7 @@
           <textarea name="note" rows="9" placeholder="Напишите что-нибудь..." id="text-modal"></textarea> 
           <label for="text-modal" class="visually-hidden">Напишите что-нибудь...</label>
         </p>               
-        <button type="submit" class="btn main-button button-submit">Отправить</button>       
+        <button type="submit" class="btn main-button btn-submit">Отправить</button>       
       </form>         
     </section>
 
