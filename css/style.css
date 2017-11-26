@@ -251,15 +251,13 @@ a:active {
 
 .banner {
   display: flex;
-  width: 1146px;
   min-height: 230px;
-  justify-content: space-around;
   margin-bottom: 40px;
 }
 
 .banner-item {
   width: 560px;
-  height: 229px;
+  min-height: 229px;
   padding-top: 23px;
   padding-left: 20px;
   padding-right: 20px;
@@ -293,10 +291,15 @@ a:active {
   background: #482513 url("../img/chocolate-bg.jpg");
 }
 
+.button-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 45px;
+}
+
 .banner button {
   width: 165px;
   height: 46px;
-   position: absolute;
   right: 20px;
   top: 160px;
 }
@@ -311,12 +314,10 @@ a:active {
 
 .popular-item {
   display: flex;
-  width: 1146px;
   min-height: 382px;
   margin-bottom: 40px;
   flex-wrap: wrap;
   box-sizing: border-box;
-  flex-direction: column;
 }
 
 .item-list {
@@ -409,7 +410,6 @@ a:active {
 
 
 .about-company {
-  width: 1086px;
   height: 266px;
   padding: 20px 30px;
   margin-bottom: 40px;
@@ -439,7 +439,6 @@ a:active {
 /*Blog*/
 
 .index-columns {
-  width: 1146px;
   display: flex;
   margin-bottom: 40px;
 }
@@ -925,6 +924,11 @@ a:active {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
 }
 
 
