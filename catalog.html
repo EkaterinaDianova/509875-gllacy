@@ -19,7 +19,7 @@
         </a>
         <div class="site-navigation">
           <ul class="site-navigation-catalog">
-            <li><a href="catalog.html">Каталог</a>
+            <li><a href="catalog.html" class="active">Каталог</a>
               <ul class="form-menu-catalog">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочноe</a></li>
@@ -34,7 +34,7 @@
         </div>
         <div class="header-info">
           <div class="user-navigation">
-            <div class="search"><button class="btn  button-user button-search">Поиск</button> 
+            <div class="search"><button class="btn  button-user button-search"><p class="visually-hidden">Поиск</p></button> 
               <form action="https://echo.htmlacademy.ru" method="post" hidden>
                 <p class="user-item">
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
@@ -60,7 +60,7 @@
                 </div>                
               </form>
               </div> 
-            <div><button class="btn button-user btn-card">2 товара</button></div>
+            <div><button class="btn button-user btn-card active">2 товара</button></div>
           </div>                    
         </div>   
             <nav class="breadcrums-catalog">
@@ -81,20 +81,9 @@
 
      <main class="container">
       <h1 class="inner-title">Сливочное мороженое</h1>
-      <section class="filters">     
-        <div class="filters-wrap">
-          <p>Цена: 100 руб. – 500 руб.</p> 
-          <div class="search-wrap range-sort">
-            <div class="filters-range-button">
-               <button type="button" class="skroll_left"></button>
-               <button type="button" class="skroll_right"></button>
-               <div class="skroll_field"></div>                
-            </div>
-          </div>
-          </div>
-       </div>       
-        <form action="https://echo.htmlacademy.ru" method="post">   
-          <div class="filters-wrap">    
+      <section class="filters">      
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">   
+        <div class="filters-wrap">    
               <legend>Сортировка</legend>  
               <div class="search-wrap sort-list">
                 <select>
@@ -104,8 +93,16 @@
                     <option>по жирности</option>
                 </select>  
               </div>
-            </div>
-     
+        </div>   
+        <div class="filters-wrap range-wrap">
+          <p>Цена: 100 руб. – 500 руб.</p> 
+          <div class="search-wrap range-sort">
+               <button type="button" class="skroll_left"></button>
+               <button type="button" class="skroll_right"></button>
+               <div class="skroll_field"></div>   
+               <div class="skroll_field_center"></div>              
+          </div>
+        </div>       
           <div class="filters-wrap">
               <legend>Жирность</legend>
               <div class="search-wrap fat-list">
@@ -138,7 +135,6 @@
                   <label for="filter-jam">джемы</label>
               </div>
           </div>
-
           <button class="btn button-filter">Применить</button>        
         </form>   	
       </section>
@@ -246,35 +242,31 @@
 
       <div class="pagination">
         <ul class="pagination-list">
-        	<li class="pagination-number"><a href="#">1</a></li>
+        	<li class="pagination-number active"><a href="#">1</a></li>
         	<li class="pagination-number"><a href="#">2</a></li>
         	<li class="pagination-number"><a href="#">3</a></li>
         	<li class="pagination-number"><a href="#">4</a></li>
         	<li class="pagination-number"><a href="#">5</a></li>
         </ul>
-        <span class="pagination-nest"><a href="#">></a></span> 	
       </div>    	
     </main>
 
+    
     <footer class="main-footer">
       <div class="container-footer">
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Инстаграмм</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
+          <ul class="footer-social">
+            <li><a class="social-button twitter" href="#"><p class="visually-hidden">Твиттер</p></a></li>
+            <li><a class="social-button instagramm" href="#"><p class="visually-hidden">Инстаграмм</p></a></li>
+            <li><a class="social-button facebook" href="#"><p class="visually-hidden">Фейсбук</p></a></li>
+            <li><a class="social-button vkontakte" href="#"><p class="visually-hidden">Вконтакте</p></a></li>
           </ul>       
-        </div>
 
-        <div class="footer-menu">
-          <ul>
+          <ul class="footer-menu">
             <li><a href="#">Для поставщиков</a></li>
             <li><a href="#">О производстве</a></li>
             <li><a href="#">Наши документы</a></li>
             <li><a href="#">Экологические стандарты</a></li>
           </ul>       
-        </div>
 
           <div class="footer-copyright">
             <a href="#"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>

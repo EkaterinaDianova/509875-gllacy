@@ -34,9 +34,8 @@
             <li><a href="#">О Компании</a></li>
           </ul>  	  	
     	  </div>
-    	  <div class="header-info">
     	    <div class="user-navigation">
-            <div class="search"><button class="btn  button-user button-search">Поиск</button> 
+            <div class="search"><button class="btn  button-user button-search"><p class="visually-hidden">Поиск</p></button> 
               <form action="https://echo.htmlacademy.ru" method="post" hidden>
                 <p class="user-item">
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
@@ -62,9 +61,8 @@
                     </div>                
                 </form>
               </div>             
-            <div><button class="btn button-user btn-card">Пусто</button></div>
+            <div class="card-link"><button class="btn button-user btn-card">Пусто</button></div>
     	    </div> 	    	      	  	
-    	  </div>
     	  <p class="header-contacts">С 10 до 20, ежедневно <br>
     	    <a href="tel:+88124502525" class="header-contacts-number">8 812 450-25-25</a>    	  	
     	  </p>
@@ -78,23 +76,25 @@
       <section class="slider">
         <h2>Крем-брюле и пломбир с малиновым джемом</h2>        
         <img src="img/icecreamslider.png" width="647" height="584" alt="Мороженое1">
-        <ul class="slides-switches">
+        <div class="wrapper-slides-swicthes">
+          <ul class="slides-switches">
           <li class="slide-radio">
           <button class="slide-btn">
-          Первый слайд
+          <p class="visually-hidden">Первый слайд</p>
           </button>
           </li>
           <li class="slide-radio">
          <button class="slide-btn">
-          Второй слайд
+          <p class="visually-hidden">Второй слайд</p>
           </button>
           </li>
          <li class="slide-radio">
           <button class="slide-btn">
-          Третий слайд
+          <p class="visually-hidden">Третий слайд</p>
           </button>
           </li>
         </ul>
+        </div>       
         <button class="btn main-button btn-slider">Давайте оба!</button>    	
       </section>
 
@@ -115,7 +115,7 @@
       <section class="popular-item">
        <h2 class="visually-hidden">Популярные товары</h2>
         <div class="item-list">
-        	<div class="popular-item-description">
+        	<div class="popular-item-description hit-mark">
             <div class="item-hover">
               <img src="img/item1.jpg" width="267" height="267" alt="Cливочное мороженое">
               <a class="btn main-button button-item-hover">Быстрый просмотр</a>  
@@ -123,7 +123,7 @@
         		  <a class="popular-item-link" href="#"><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>              
             </div>
         	</div>
-        	<div class="popular-item-description">
+        	<div class="popular-item-description hit-mark">
             <div class="item-hover">
         	    <img src="img/item2.jpg" width="267" height="267" alt="Cливочное мороженое">        		  
         		  <a class="popular-item-link" href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
@@ -131,7 +131,7 @@
               <button class="btn main-button button-item-hover">Быстрый просмотр</button>
         	   </div>
           </div>
-        	<div class="popular-item-description">
+        	<div class="popular-item-description hit-mark">
             <div class="item-hover">
         	    <img src="img/item3.jpg" width="267" height="267" alt="Cливочное мороженое">
         		  <div class="price-item"><p>355<span class="popular-item-weight">/кг</span></p></div>
@@ -139,7 +139,7 @@
               <button class="btn main-button button-item-hover">Быстрый просмотр</button>
         	</div>
           </div>
-        	<div class="popular-item-description">
+        	<div class="popular-item-description hit-mark">
             <div class="item-hover">
         		  <img src="img/item4.jpg" width="267" height="267" alt="Cливочное мороженое">
         		  <div class="price-item"><p>415<span class="popular-item-weight">/кг</span></p></div>
@@ -157,11 +157,12 @@
           <p class="about-company-feature">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         </div>
         <div class="about-block about-block-2">
-          <p class="about-company-feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </div>
-        <div class="about-block about-block-3">
           <p class="about-company-feature">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         </div>
+        <div class="about-block about-block-3">
+          <p class="about-company-feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </div>
+        
         <div class="about-block about-block-4">
           <p class="about-company-feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </div>        	
@@ -170,7 +171,7 @@
       <div class="index-columns">      
         <article class="blog-new">
           <p class="blog-new-category">Новое в нашем блоге</p>
-          <a href="#"><h1>10 способов сервировки фруктовых щербетов к столу</h1> </a>     
+          <a href="#"><h1>10 способов сервировки фруктовых щербетов к столу</h1></a>     
         </article>
 
         <section class="dispatch">
@@ -209,23 +210,19 @@
 
     <footer class="main-footer">
       <div class="container-footer">
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Инстаграмм</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
+          <ul class="footer-social">
+            <li><a class="social-button twitter" href="#"><p class="visually-hidden">Твиттер</p></a></li>
+            <li><a class="social-button instagramm" href="#"><p class="visually-hidden">Инстаграмм</p></a></li>
+            <li><a class="social-button facebook" href="#"><p class="visually-hidden">Фейсбук</p></a></li>
+            <li><a class="social-button vkontakte" href="#"><p class="visually-hidden">Вконтакте</p></a></li>
           </ul>       
-        </div>
 
-        <div class="footer-menu">
-          <ul>
+          <ul class="footer-menu">
         	  <li><a href="#">Для поставщиков</a></li>
         	  <li><a href="#">О производстве</a></li>
         	  <li><a href="#">Наши документы</a></li>
         	  <li><a href="#">Экологические стандарты</a></li>
           </ul>      	
-        </div>
 
           <div class="footer-copyright">
             <a href="#"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>
