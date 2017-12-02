@@ -40,16 +40,15 @@
         <div class="header-info">
     	    <div class="user-navigation">
             <div class="search"><button class="btn  button-user button-search"><p class="visually-hidden">Поиск</p></button> 
-              <form action="https://echo.htmlacademy.ru" method="post" hidden>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="user-item">
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
                   <label for="search" class="visually-hidden">Что ищем?</label> 
                 </p>
               </form>
             </div>             
-    	  	  <div class="login-link"><button class="btn button-user button-login">Вход</button></div>
-              <div class="autorization-wrapper">
-                   <form class="autorization" hidden>
+    	  	  <div class="login-link"><button class="btn button-user button-login">Вход</button>
+                   <form class="autorization-form">
                     <p class="user-item">                  
                       <input type="email" name="login" placeholder="Электронная почта" id="login">
                       <label for="login" class="visually-hidden">Электронная почта</label>
@@ -57,12 +56,15 @@
                     <p class="user-item">
                       <input type="password" name="password" placeholder="Пароль" id="password-header">
                       <label for="password-header" class="visually-hidden" id="password">Пароль</label>
-                    </p>                
+                    </p>  
+                    <div class="autorization-form-info"> 
                     <button class="btn main-button" type="submit" name="autorization-submit">Войти</button>
                     <div class="form-autorization-link">
                       <a href="#">Забыли пароль?</a>
                       <a href="#">Новая регистрация</a>
-                    </div>                
+                    </div>     
+                    </div>        
+                                  
                 </form>
               </div>             
             <div class="card-link"><button class="btn button-user btn-card">Пусто</button></div>
@@ -130,7 +132,7 @@
         	    <img src="img/item2.jpg" width="267" height="267" alt="Cливочное мороженое">        		  
         		  <a class="popular-item-link" href="#"><h3>Сливочно-кофейное с кусочками шоколада</h3></a>
               <div class="price-item"><p>380<span class="popular-item-weight">/кг</span></p></div>
-              <button class="btn main-button button-item-hover">Быстрый просмотр</button>
+              <a class="btn main-button button-item-hover">Быстрый просмотр</a>
         	   </div>
           </div>
         	<div class="popular-item-description hit-mark">
@@ -138,7 +140,7 @@
         	    <img src="img/item3.jpg" width="267" height="267" alt="Cливочное мороженое">
         		  <div class="price-item"><p>355<span class="popular-item-weight">/кг</span></p></div>
         		  <a class="popular-item-link" href="#"><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3></a>
-              <button class="btn main-button button-item-hover">Быстрый просмотр</button>
+              <a class="btn main-button button-item-hover">Быстрый просмотр</a>
         	</div>
           </div>
         	<div class="popular-item-description hit-mark">
@@ -146,7 +148,7 @@
         		  <img src="img/item4.jpg" width="267" height="267" alt="Cливочное мороженое">
         		  <div class="price-item"><p>415<span class="popular-item-weight">/кг</span></p></div>
         		  <a class="popular-item-link" href="#"><h3>Сливочное крем-брюле с карамельной подливкой</h3></a>
-              <button class="btn main-button button-item-hover">Быстрый просмотр</button>
+              <a class="btn main-button button-item-hover">Быстрый просмотр</a>
         	  </div>
         </div> 
         </div> 	
@@ -173,15 +175,17 @@
       <div class="index-columns">      
         <article class="blog-new">
           <p class="blog-new-category">Новое в нашем блоге</p>
-          <a href="#"><h1>10 способов сервировки фруктовых щербетов к столу</h1></a>     
+          <a href="#"><h1>10 способов сервировки <br> фруктовых щербетов <br>к столу</h1></a>     
         </article>
 
         <section class="dispatch">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="dispatch-submit" action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" name="email" value="" placeholder="Электронная почта" required>
-          <button class="btn main-button button-submit">Отправить</button>
-          </form>       
+          <div class="dispatch-inner">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="dispatch-submit" action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" name="email" value="" placeholder="Электронная почта" required>
+              <button class="btn main-button button-submit">Отправить</button>
+            </form>  
+          </div>
         </section>
       </div>
     </main>  
@@ -203,7 +207,7 @@
           (с 10 до 20 ежедневно)
           </p>
         </div>       
-        <a class="btn main-button btn-form-contacts">Форма обратной связи</a>
+        <a href="form.html" class="btn main-button btn-form-contacts">Форма обратной связи</a>
         </div>
       </section>
     <footer class="main-footer">
@@ -223,8 +227,8 @@
           </ul>      	
 
           <div class="footer-copyright">
-            <a href="#"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>
-            <p class="footer-copyright-text">Сделано в <a href="#">HTML Academy</a> © 2017</p>       	
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>
+            <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>       	
           </div>   
       </div> 	
     </footer>

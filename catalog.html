@@ -36,32 +36,53 @@
         <div class="header-info">
           <div class="user-navigation">
             <div class="search"><button class="btn  button-user button-search"><p class="visually-hidden">Поиск</p></button> 
-              <form action="https://echo.htmlacademy.ru" method="post" hidden>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="user-item">
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
                   <label for="search" class="visually-hidden">Что ищем?</label> 
                 </p>
               </form>
             </div>             
-            <div class="login-link"><button class="btn button-user button-login">Вход</button></div>
-              <div class="autorization-wrapper">
-              <form class="autorization" hidden>
-                <p class="user-item">                  
-                  <input type="email" name="login" placeholder="Электронная почта" id="login">
-                  <label for="login" class="visually-hidden">Электронная почта</label>
-                </p>
-                <p class="user-item">
-                  <input type="password" name="password" placeholder="Пароль" id="password-header">
-                  <label for="password-header" class="visually-hidden" id="password">Пароль</label>
-                </p>                
-                <button class="btn main-button" type="submit" name="autorization-submit">Войти</button>
-                <div class="form-autorization-link">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </div>                
-              </form>
-              </div> 
-            <div><button class="btn button-user btn-card active">2 товара</button></div>
+              <div class="login-link"><button class="btn button-user button-login">Вход</button>
+                   <form class="autorization-form">
+                    <p class="user-item">                  
+                      <input type="email" name="login" placeholder="Электронная почта" id="login">
+                      <label for="login" class="visually-hidden">Электронная почта</label>
+                      </p>
+                    <p class="user-item">
+                      <input type="password" name="password" placeholder="Пароль" id="password-header">
+                      <label for="password-header" class="visually-hidden" id="password">Пароль</label>
+                    </p>  
+                    <div class="autorization-form-info"> 
+                    <button class="btn main-button" type="submit" name="autorization-submit">Войти</button>
+                    <div class="form-autorization-link">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>     
+                    </div>                                       
+                </form>
+              </div>  
+            <div class="card-link"><button class="btn button-user btn-card active">2 товара</button>             
+             <div class="modal modal-cart">
+                  <div class="card-info">
+                      <button class="cross-btn" type="submit"></button>
+                      <img class="card-jpg" src="img/item1.jpg" width="33" height="33" alt="Cливочное мороженое">
+                      <p><a href="#" class="card-name">Пломбир с апельсиновым джемом</a></p>
+                      <p class="card-weight">1,5 кг х <span>200 руб.</span></p>
+                      <p>300 руб.</p>
+                      <button class="cross-btn" type="submit"></button>
+                      <img class="card-jpg" src="img/item3.jpg" width="33" height="33" alt="Cливочное мороженое">
+                      <p><a href="#" class="card-name">Клубничный пломбир с присыпкой из белого шоколада</a></p>
+                      <p class="card-weight">1,5 кг х <span>300 руб.</span></p>
+                      <p>450 руб.</p>
+                  </div>               
+               <div class="card-total">
+                 <b>Итого:750 руб.</b>
+                 <a class="btn main-button btn-cart" href="#">Оформить заказ</a>
+               </div>
+             </div>
+            </div>
+
           </div>                    
         </div>   
             <nav class="breadcrums-catalog">
@@ -107,16 +128,16 @@
           <div class="filters-wrap">
               <legend>Жирность</legend>
               <div class="search-wrap fat-list">
-                <input type="radio" id="0%">
+                <input type="radio" name="radio" id="0%">
                 <label class="fat-range" for="0%">0%</label>
 
-                <input type="radio" id="10%" checked>
+                <input type="radio" name="radio" id="10%" checked>
                 <label class="fat-range" for="10%">до 10%</label>
 
-                <input type="radio" id="30%">
+                <input type="radio" name="radio" id="30%">
                 <label class="fat-range" for="30%">до 30%</label>
 
-                <input type="radio" id="above30%">
+                <input type="radio" name="radio" id="above30%">
                 <label class="fat-range" for="above30%">выше 30%</label>
               </div>
           </div>
@@ -270,29 +291,13 @@
           </ul>       
 
           <div class="footer-copyright">
-            <a href="#"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>
-            <p class="footer-copyright-text">Сделано в <a href="#">HTML Academy</a> © 2017</p>        
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>
+            <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>        
           </div>   
       </div>  
     </footer>
     </div>
 
-    <section class="modal modal-cart">
-    	<table>
-    		<tr>
-    			<td>Пломбир с апельсиновым джемом</td>
-    			<td>1,5 кг х <span>200 руб.</span></td>
-    			<td>300 руб.</td>
-    		</tr>
-    		<tr>
-    			<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-    			<td>1,5 кг х <span>300 руб.</span></td>
-    			<td>450 руб.</td>
-    		</tr>	
-    	</table>
-    	<b>Итого:750 руб.</b><br>
-    	<a class="btn main-button btn-cart" href="#">Оформить заказ</a>
-    </section>
 
     <script src="js/script.js"></script> 
   </body>
