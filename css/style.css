@@ -234,6 +234,7 @@ input[type="radio"].visually-hidden {
   margin-right: 10px;
   display: flex;
   position: relative;
+  padding-bottom: 20px;
 }
 
 .button-search {
@@ -241,6 +242,7 @@ input[type="radio"].visually-hidden {
   width: 32px;
   height: 32px;
   position: relative;
+
 }
 
 .button-search::before {
@@ -269,7 +271,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   border-radius: 5px;
   background-color: #f8f7f4;
-  z-index: 5;
+  z-index: 100;
   top: 38px;
   right: 0;
   display: none;
@@ -285,6 +287,7 @@ input[type="radio"].visually-hidden {
 
 .search:hover .search-form {
   display: block;
+  z-index: 100;
 }
 
 .login-link {
@@ -292,6 +295,7 @@ input[type="radio"].visually-hidden {
   height: 32px;
   position: relative;
   margin-right: 10px;
+  padding-bottom: 20px;
  }
 
 .button-login {
