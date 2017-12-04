@@ -1387,6 +1387,8 @@ input[type="radio"].visually-hidden {
   line-height: 28px;
   color: #323232;
   margin: 0;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 
 .modal-feedback {
@@ -1397,7 +1399,12 @@ input[type="radio"].visually-hidden {
   padding-left: 24px;
   padding-right: 25px;
   border-radius: 10px;
-  display: none;
+  position: fixed;
+  top: 338px;
+  left: 50%;
+  margin-left: -238px;
+  z-index: 20;
+
 }
 
 .form-feedback {
@@ -1427,16 +1434,16 @@ input[type="radio"].visually-hidden {
   height: 44px;
 }
 
-.form-feedback textarea  {
-  width: 428px;
-  height: 155px;
-  margin-bottom: 25px;
-  border-radius: 5px;
-}
 
 .modal-close {
-  align-self: flex-end;
-  display: flex;
+  width: 18px;
+  height: 17px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .form-feedback label {
@@ -1458,6 +1465,10 @@ input[type="radio"].visually-hidden {
   padding-top: 13px;
   padding-left: 14px;
   box-sizing: border-box;
+  width: 428px;
+  height: 155px;
+  margin-bottom: 16px;
+  border-radius: 5px;
 }
 
 .form-feedback textarea:hover,
@@ -1466,13 +1477,10 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-submit {
-  text-decoration: none;
   width: 138px;
   height: 43px;
   font-weight: 700;
   font-size: 18px;
-  display: flex;
-  justify-content: center;
   margin-left: auto;
 }
 
@@ -1924,7 +1932,6 @@ input[type="radio"].visually-hidden {
 .wrapper::before,
 .wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -1940,10 +1947,22 @@ input[type="radio"].visually-hidden {
   min-width: 940px;
   margin: 0 auto;
   background-color: #849d8f;
+  background-color: rgba(0,0,0,0.3);
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url(../img/icecreamslider1.png);
   transition: background-image 0.5s ease, background-color 0.5s ease;
+  position: relative;
+}
+
+.wrapper::after {
+ content: "";
+ width: 100%;
+ height: 100%;
+ left: 0;
+ top: 0;
+ position: absolute;
+ background-color: rgba( 255, 0, 0, 0.5);
 }
 
 .wrapper-inner {
@@ -1962,5 +1981,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: #e9e1c2;
+
 }
 
