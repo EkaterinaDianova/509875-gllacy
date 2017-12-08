@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси:каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Google Fonts --> 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    
   </head>
   
   <body>
@@ -20,7 +20,7 @@
         </a>
         <div class="site-navigation">
           <ul class="site-navigation-catalog">
-            <li><a class="active" href="catalog.html" class="active">Каталог</a>
+            <li><a class="active" href="catalog.html">Каталог</a>
               <ul class="form-menu-catalog">
                 <li><a href="#">Новинки</a></li>
                 <li><a class="active">Сливочноe</a></li>
@@ -35,7 +35,7 @@
         </div>
         <div class="header-info">
           <div class="user-navigation">
-            <div class="search"><button class="btn  button-user button-search"><p class="visually-hidden">Поиск</p></button> 
+            <div class="search"><a class="btn  button-user button-search"><p class="visually-hidden">Поиск</p></a> 
               <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="user-item">
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
@@ -106,7 +106,7 @@
       <section class="filters">      
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">   
         <div class="filters-wrap">    
-              <legend>Сортировка</legend>  
+              <h5>Сортировка</h5>  
               <div class="search-wrap sort-list">
                 <select>
                     <option>по популярности</option>
@@ -126,7 +126,7 @@
           </div>
         </div>       
           <div class="filters-wrap">
-              <legend>Жирность</legend>
+              <h5>Жирность</h5>
               <div class="search-wrap fat-list">
                 <input type="radio" name="radio" id="0%">
                 <label class="fat-range" for="0%">0%</label>
@@ -143,7 +143,7 @@
           </div>
 
           <div class="filters-wrap">
-              <legend>Наполнители</legend>
+              <h5>Наполнители</h5>
                 <div class="search-wrap filler-list">
                   <input type="checkbox" id="filter-chokolate" name="chokolate" checked>
                   <label for="filter-chokolate">шоколадные</label>
@@ -168,9 +168,9 @@
         	    <img src="img/item1.jpg" width="267" height="267" alt="Cливочное мороженое">
               <a class="btn main-button button-item-hover">Быстрый просмотр</a>  
         		  <div class="price-item"><p>310
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
-              <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
+                 <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
               </svg>
               <span class="popular-item-weight">/кг</span></p></div>
@@ -181,7 +181,7 @@
             <div class="item-hover">
         	    <img src="img/item2.jpg" width="267" height="267" alt="Cливочное мороженое">
         		  <div class="price-item"><p>380
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
               <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
@@ -196,7 +196,7 @@
               <img src="img/item3.jpg" width="267" height="267" alt="Cливочное мороженое">
               <a class="btn main-button button-item-hover">Быстрый просмотр</a>  
               <div class="price-item"><p>355
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
               <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
@@ -209,7 +209,7 @@
             <div class="item-hover">
               <img src="img/item4.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>415
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
               <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
@@ -223,7 +223,7 @@
             <div class="item-hover">
               <img src="img/item5.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>310
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
               <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
@@ -237,11 +237,11 @@
             <div class="item-hover">
               <img src="img/item6.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>410
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
-              <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
-                v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
-              </svg>
+             <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
+             <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
+               v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
+             </svg>
               <span class="popular-item-weight">/кг</span></p></div>
               <a class="catalog-item-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
               <a class="btn main-button button-item-hover">Быстрый просмотр</a>  
@@ -251,9 +251,9 @@
             <div class="item-hover"> 
               <img src="img/item7.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>375
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
-              <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
+                 <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
               </svg>
               <span class="popular-item-weight">/кг</span></p></div>
@@ -265,9 +265,9 @@
             <div class="item-hover">
               <img src="img/item8.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>320
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
-              <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
+                 <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
               </svg>
               <span class="popular-item-weight">/кг</span></p></div>
@@ -279,8 +279,8 @@
             <div class="item-hover">
               <img src="img/item9.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>440
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
+             <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
               <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
               </svg>
@@ -293,7 +293,7 @@
             <div class="item-hover">
               <img src="img/item10.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>435
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
               <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
@@ -307,7 +307,7 @@
             <div class="item-hover">
               <img src="img/item11.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>355
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
               <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
@@ -321,7 +321,7 @@
             <div class="item-hover">
               <img src="img/item1.jpg" width="267" height="267" alt="Cливочное мороженое">
               <div class="price-item"><p>420
-              <svg class="price-ruble version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg class="price-ruble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="31px" height="36px" viewBox="0 0 31 36" enable-background="new 0 0 31 36" xml:space="preserve">
               <path fill="#FFFFFF" d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
                 v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
@@ -347,7 +347,6 @@
 
     
     <footer class="main-footer">
-      <div class="container-footer">
           <ul class="footer-social">
             <li><a class="social-button twitter" href="#"><p class="visually-hidden">Твиттер</p></a></li>
             <li><a class="social-button instagramm" href="#"><p class="visually-hidden">Инстаграмм</p></a></li>
@@ -365,8 +364,7 @@
           <div class="footer-copyright">
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="368" height="153" alt="Логотип html-академия"></a>
             <p class="footer-copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>        
-          </div>   
-      </div>  
+          </div>    
     </footer>
     </div>
 
