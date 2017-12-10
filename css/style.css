@@ -1358,7 +1358,7 @@ input:-ms-input-placeholder {
   position: absolute;
   border-radius: 15px;
   top: 62px;
-  right: 375px;
+  right: 0px;
 }
 
 .contacts-first {
@@ -2025,41 +2025,31 @@ input:-ms-input-placeholder {
 .filler-list input[type=checkbox] + label::before {
   content: "";
   display: inline-block;
-  width: 20px;
+  width: 24px;
   height: 20px;
   margin-right: 10px;
   position: absolute;
   left: 0;
   top: 0;
   border-radius: 2px;
-  border: 2px solid rgba(255,255,255,0.8);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   vertical-align:middle;
+  background-image: url("../img/checkbox-off.png");
+  background-position: no-repeat;
 }
 
-.filler-list input[type=checkbox]:checked + label:before {
-  content: "\2714";
-  color: rgba(255,255,255,0.8);
-  font-size: 20px;
-  text-align: center;
-  line-height: 15px;
-  padding: 0;
+.filler-list input[type=checkbox]:checked + label::before {
+  content: "";
+  background-image: url("../img/checkbox-on.png");
+  background-position: no-repeat;
 }
 
-.filler-list input[type=checkbox] + label:hover:before {
-  width: 20px;
-  height: 20px;
-  border: 2px solid rgba(255,255,255,1);
-}
 
 .filler-list  input[type=checkbox]:checked + label:hover:before {
-  content: "\2714";
-  color: rgba(255,255,255,1);
-  font-size: 20px;
-  text-align: center;
-  line-height: 15px;
-  padding: 0;
+  content: "";
+  background-image: ;
+  background-position: no-repeat;
 }
 
 /*Сортировка по цене*/
@@ -2279,6 +2269,17 @@ input:-ms-input-placeholder {
   padding: 0 2.3%;
 }
 
+.container-map {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-map-inner {
+  padding: 0 2.3%;
+  position: relative;
+}
+
 .wrapper::before,
 .wrapper::after {
   content: "";
@@ -2337,7 +2338,7 @@ input:-ms-input-placeholder {
 }
 
 .map iframe {
-  width: 100%;
+  width: 1200px;
   border: 0px;
 }
 
