@@ -885,7 +885,7 @@ input:-ms-input-placeholder {
   flex-wrap: wrap;
   font-size: 16px;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 
 .item-list div:nth-child(4n) {
@@ -897,9 +897,9 @@ input:-ms-input-placeholder {
 }
 
 .popular-item-description {
-  width: 22.75%;
+  width: 23.2%;
   margin-right: 2.2%;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   display: inline-block;
   position: relative;
   vertical-align: top;
@@ -955,6 +955,10 @@ input:-ms-input-placeholder {
   font-size: 30px;
 }
 
+.item-list-inner span {
+  font-size: 30px;
+}
+
 .item-list img {
   margin-bottom: 5px;
   border-radius: 50%;
@@ -964,6 +968,7 @@ input:-ms-input-placeholder {
   margin-bottom: 5px;
   border-radius: 50%;
 }
+
 
 .price-item {
   text-decoration: none;
@@ -1293,7 +1298,7 @@ input:-ms-input-placeholder {
 }
 
 .wrapper-inner .main-footer {
-  margin-top: 34px;
+  margin-top: 31px;
   padding-top: 19px;
   border-top: 1px solid rgba(255,255,255,0.3);
 }
@@ -1303,7 +1308,7 @@ input:-ms-input-placeholder {
   margin: 0;
   padding: 0;
   margin-right: 26px;
-  padding-top: 14px;
+  padding-top: 18px;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -1459,12 +1464,13 @@ input:-ms-input-placeholder {
  .footer-copyright a {
   align-self: center;
   height: 39px;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .footer-copyright img {
   width: 125px;
   height: 39px;
+  transform: scale(0.91);
 }
 
 .footer-copyright-text {
@@ -1710,7 +1716,7 @@ input:-ms-input-placeholder {
   height: 36px;
   box-sizing: border-box;
   border-radius: 24px;
-  padding: 7px 18px;
+  padding: 7px 16px;
 } 
 
 .sort-list {
@@ -1830,12 +1836,13 @@ input:-ms-input-placeholder {
   box-sizing: border-box;
 }
 
-.filler-list input[type=checkbox] + label {
+.filler-list label {
   cursor: pointer;
   position: relative;
   padding-left: 30px;
-  margin-right: 16px;
+  margin-right: 20px;
 }
+
 
 .filler-list input[type=checkbox] {
   display: none; 
@@ -1936,7 +1943,7 @@ input:-ms-input-placeholder {
 }
 
 .skroll_right {
-  right: 60px;
+  right: 63px;
 }
 
 .skroll_left,
@@ -1977,7 +1984,7 @@ input:-ms-input-placeholder {
 .pagination {
   display: flex;
   justify-content: flex-end;
-  margin-right: 25px;
+  margin-right: 22px;
 }
 
 .pagination-list {
@@ -1993,6 +2000,7 @@ input:-ms-input-placeholder {
   margin-right: 3px;
   text-align: center;
   position: relative;
+  line-height: 1.6;
  }
  
 .pagination a {
@@ -2024,7 +2032,7 @@ input:-ms-input-placeholder {
   width: 8px;
   height: 12px;
   position: absolute;
-  top: 5px;
+  top: 6px;
   right: -25px;
   background-image: url("../img/icon-right-small-2.png");
   background-repeat: no-repeat;
